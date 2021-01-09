@@ -1,11 +1,11 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { InicioPageComponent } from './pages/inicio-page/inicio-page.component';
+import { IncioPageComponent } from './pages/incio-page/incio-page.component';
 
 const routes: Routes = [
   {
     path: '',
-    component: InicioPageComponent
+    component: IncioPageComponent
   }
 ];
 

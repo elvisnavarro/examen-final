@@ -4,7 +4,7 @@ import { AdministradorPageComponent } from './pages/administrador-page/administr
 
 const routes: Routes = [
   {
-    path: 'administrador',
+    path: '',
     component: AdministradorPageComponent
   }
 ];

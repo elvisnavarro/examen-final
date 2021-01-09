@@ -4,7 +4,7 @@ import { ContactenosPageComponent } from './pages/contactenos-page/contactenos-p
 
 const routes: Routes = [
   {
-    path: 'contactenos',
+    path: '',
     component: ContactenosPageComponent
   }
 ];

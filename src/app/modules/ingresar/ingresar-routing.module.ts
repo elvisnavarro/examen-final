@@ -4,7 +4,7 @@ import { IngresarPageComponent } from './pages/ingresar-page/ingresar-page.compo
 
 const routes: Routes = [
   {
-    path: 'ingresar',
+    path: '',
     component: IngresarPageComponent
   }
 ];

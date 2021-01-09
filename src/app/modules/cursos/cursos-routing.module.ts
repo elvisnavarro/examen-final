@@ -5,7 +5,7 @@ import { CursosDetallePageComponent } from './pages/cursos-detalle-page/cursos-d
 
 const routes: Routes = [
   {
-    path: 'cursos',
+    path: '',
     component: CursosPageComponent
   },
   {
