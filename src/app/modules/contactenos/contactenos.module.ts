@@ -3,10 +3,11 @@ import { CommonModule } from '@angular/common';
 
 import { ContactenosRoutingModule } from './contactenos-routing.module';
 import { ContactenosPageComponent } from './pages/contactenos-page/contactenos-page.component';
+import { ContactenosFormComponent } from './components/contactenos-form/contactenos-form.component';
 
 
 @NgModule({
-  declarations: [ContactenosPageComponent],
+  declarations: [ContactenosPageComponent, ContactenosFormComponent],
   imports: [
     CommonModule,
     ContactenosRoutingModule
