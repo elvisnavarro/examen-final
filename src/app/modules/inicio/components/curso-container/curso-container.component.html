@@ -1,1 +1,10 @@
-<p>Cursos</p>
+<div class="text-center mb-5">
+    <h1 class="display-5"> Available Courses</h1>
+</div>
+<div class="row g-4">
+    <app-curso class="col" *ngFor="let curso of cursos" [curso]="curso" ></app-curso>
+</div>
+<div class="text-center mb-5">
+    <a [routerLink]="['/cursos']" class="btn btn-primary my-2">Ver todo los cursos</a>
+</div>
+

@@ -1,1 +1,6 @@
-<p>curso-grid works!</p>
+<div class="text-center mb-5">
+    <h1 class="display-5"> Out Courses</h1>
+</div>
+<div class="row g-4">
+    <app-curso class="col" *ngFor="let curso of cursos" [curso]="curso" ></app-curso>
+</div>

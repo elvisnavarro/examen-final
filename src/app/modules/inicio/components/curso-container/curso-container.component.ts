@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Curso } from 'src/app/shared/interfaces/curso';
+import { CursoService } from 'src/app/shared/services/curso.service';
 
 @Component({
   selector: 'app-curso-container',
@@ -9,9 +10,10 @@ import { Curso } from 'src/app/shared/interfaces/curso';
 export class CursoContainerComponent implements OnInit {
 
   cursos: Curso[];
-  constructor() { }
+  constructor(private cursoService: CursoService) { }
 
   ngOnInit(): void {
+    this.cursoService.getCursosFeatured().subscribe( cursos => this.cursos = cursos );
   }
 
 }

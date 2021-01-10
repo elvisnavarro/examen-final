@@ -1,13 +1,15 @@
 export interface Curso {
     id: number;
-    title: string;
-    imagen: string;
-    descripcion: string;
-    precio: number;
-    instructor: string;
-    duración: number;
-    numeroDeLecciones: number;
-    cantidadDeEstudiantes: number;
-    lenguajeDictado: string;
-    fechaDeInicio: Date;
+    name: string;
+    featured: boolean;
+    image: string;
+    language: string;
+    price: number;
+    duration: number;
+    lessons: number;
+    deadline: string;
+    students: number;
+    summary: string;
+    instructor: number;
+    category: number;
 }

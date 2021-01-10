@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Curso } from 'src/app/shared/interfaces/curso';
+import { CursoService } from 'src/app/shared/services/curso.service';
 
 @Component({
   selector: 'app-curso-grid',
@@ -7,9 +9,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CursoGridComponent implements OnInit {
 
-  constructor() { }
+  cursos: Curso[];
+  constructor(private cursoService: CursoService) { }
 
   ngOnInit(): void {
+    this.cursoService.getCursos().subscribe( cursos => this.cursos = cursos );
   }
 
 }
