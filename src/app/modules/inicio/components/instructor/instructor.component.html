@@ -1,1 +1,14 @@
-<p>instructor works!</p>
+<div class="text-center mb-5">
+    <h1 class="display-5"> Expert Instructors</h1>
+</div>
+<div class="row g-4">
+    <div class="col" *ngFor="let instructor of instructors" [instructor]="instructor" >
+        <div class="card">
+          <img [src]="instructor.image" class="card-img-top" width="100px" >
+          <div class="card-body">
+            <h5 class="card-title">{{ instructor.name }} {{ instructor.lastName }}</h5>
+            <p class="card-text">{{ instructor.educationTitle}}</p>
+          </div>
+        </div>
+      </div>
+</div>
