@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Curso } from 'src/app/shared/interfaces/curso';
 
 @Component({
@@ -8,7 +8,7 @@ import { Curso } from 'src/app/shared/interfaces/curso';
 })
 export class CursoContainerComponent implements OnInit {
 
-  @Input() curso: Curso;
+  cursos: Curso[];
   constructor() { }
 
   ngOnInit(): void {
