@@ -1,5 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { from } from 'rxjs';
 import { Curso } from 'src/app/shared/interfaces/curso';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-curso',
@@ -9,9 +11,12 @@ import { Curso } from 'src/app/shared/interfaces/curso';
 export class CursoComponent implements OnInit {
 
   @Input() curso: Curso;
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
   }
 
+  verDetalle(index: number): void{
+    this.router.navigate(['/cursos', index]);
+  }
 }

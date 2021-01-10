@@ -21,6 +21,6 @@ export class CursoService {
   }
 
   getCurso(id: number): Observable<Curso> {
-    return new Observable<Curso>(() => {});
+    return this.http.get<Curso>(`${this.apiUrl}${id}/`);
   }
 }
